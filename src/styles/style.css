@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	.h2 {
+		@apply unbounded-medium text-[48px] leading-[62px]
+	}
+	.wrapper {
+		@apply max-w-[1710px] mx-auto px-[15px]
+	}
+}
+
+@layer components {
+.raleway-medium {
+	 @apply font-raleway font-medium
+}
+.raleway-regular {
+	@apply font-raleway font-normal
+}
+.raleway-semibold {
+	@apply font-raleway font-semibold
+}
+.raleway-bold {
+	@apply font-raleway font-bold 
+}
+.unbounded-regular {
+	@apply font-unbounded font-normal
+}
+.unbounded-semibold {
+	@apply font-unbounded font-semibold 
+}
+.unbounded-medium {
+	@apply font-unbounded font-medium
+}
+}

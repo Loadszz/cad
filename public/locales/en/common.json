@@ -1,0 +1,30 @@
+{
+	"header": {
+		"navigation-1": "Our Services",
+		"navigation-2": "The benefits of working with us",
+		"navigation-3": "Portfolio",
+		"navigation-4": "Customer Reviews",
+		"navigation-5": "Leave a request"
+	},
+	"hero": {
+		"subTitle": "From web development to cloud technologies.",
+		"h1": "Custom IT solutions for your business",
+		"text": "We combine innovation and technology to create unique products that meet your business needs.",
+		"buttonText": "Let's Talk"
+	},
+	"services": {
+		"h2": "Our Services",
+		"title-first": "Cloud Migration",
+		"text-first": "We move your infrastructure from on-prem to cloud solutions, providing flexibility and scalability.",
+		"title-second": "DevOps and automation",
+		"text-second": "We maximize development speed and efficiency using DevOps practices and process automation.",
+		"title-third": "IP telephony",
+		"text-third": "We will optimize your communication system for better interaction within the team and with clients.",
+		"title-fourth": "Web Development",
+		"text-fourth": "We create high-performance websites and web applications tailored to your needs.",
+		"title-fifth": "Artificial Intelligence",
+		"text-fifth": "We integrate AI-based solutions for analytics, automation and personalization.",
+		"title-sixth": "Custom Solutions",
+		"text-sixth": "We develop unique IT solutions in accordance with the needs of your business."
+	}
+}
