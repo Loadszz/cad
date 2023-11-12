@@ -42,7 +42,7 @@ const Header = () => {
 						<span className={`absolute top-1/2 transform -translate-y-1/2 w-[20px] h-[3px] bg-white rounded-[32px] translate-x-[-50%] left-[50%] ${isOpen ? 'hidden' : ''}`}></span>
 						<span className={`absolute bottom-[12px] w-[20px] h-[3px] bg-white rounded-[32px] translate-x-[-50%] left-[50%] transition-all duration-300 ${isOpen ? 'rotate-[-45deg] top-[50%]' : ''}`}></span>
 					</button>
-					<div class={`flex justify-between items-center w-full lp:absolute lp:flex-col lp:items-start lp:top-0 lp:w-full lp:pb-[100%] lp:justify-stretch lp:bg-black lp:mt-[113px] lp:pt-[60px] lp:pl-[32px] lp:overflow-scroll tb:pl-[20px] transition-all duration-300 ${isOpen ? 'lp:left-0' : 'lp:left-[-100%]'}`}>
+					<div class={`flex justify-between items-center w-full lp:absolute lp:flex-col lp:items-start lp:top-0 lp:w-full lp:h-[100vh] lp:justify-stretch lp:bg-black lp:mt-[113px] lp:pt-[60px] lp:pl-[32px] lp:overflow-scroll tb:pl-[20px] transition-all duration-300 ${isOpen ? 'lp:left-0' : 'lp:left-[-100%]'}`}>
 						<div className='invisible lp:visible lp:absolute lp:left-0 lp:top-0 lp:bg-lol lp:bg-center lp:bg-no-repeat lp:bg-cover lp:w-full lp:h-[768px]'></div>
 						<Nav className='flex justify-center gap-[32px] lp:flex-col lp:justify-stretch lp:gap-[48px] tb:gap-[28px]' />
 						<div>
