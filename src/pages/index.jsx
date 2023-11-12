@@ -8,6 +8,7 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import { raleway, unbounded } from '@/assets/fonts/font'
 import Services from "@/components/Services";
+import Advantages from "@/components/Advantages";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
 			<main>
 				<Hero />
 				<Services />
+				<Advantages />
 				{/* <div>{locale}</div>
 				{locales.map(l => (
 					<Link href={'/'} locale={l} key={l} onClick={handleClick(l)}>

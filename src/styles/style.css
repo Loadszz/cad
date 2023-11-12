@@ -3,15 +3,36 @@
 @tailwind utilities;
 
 @layer base {
+	.lock {
+		@apply overflow-hidden
+	}
+	h1 {
+		@apply unbounded-medium text-[72px] lp:text-[48px] tb:text-[36px] leading-[93px] lp:leading-[62px] tb:leading-[43px]  text-white
+	}
 	.h2 {
 		@apply unbounded-medium text-[48px] leading-[62px]
 	}
 	.wrapper {
-		@apply max-w-[1710px] mx-auto px-[15px]
+		@apply max-w-[1710px] mx-auto px-[15px] lp:px-[32px] tb:px-[20px]
 	}
 }
 
 @layer components {
+.nav-link {
+	@apply raleway-semibold text-[14px] lp:text-[24px] tb:text-[16px] text-white leading-[24px]
+}
+.hero-sub-title {
+	@apply unbounded-regular text-[20px] lp:text-[14px] text-white
+}
+.hero-text {
+	@apply unbounded-regular text-[24px] lp:text-[16px] text-white leading-[33px] lp:leading-[22px] tb:text-[14px] tb:leading-[19px]
+}
+
+
+
+
+
+
 .raleway-medium {
 	 @apply font-raleway font-medium
 }

@@ -16,7 +16,7 @@ module.exports = {
 				'pc': { 'max': '1710px' },
 				'lp': { 'max': '1024px' },
 				'tb': { 'max': '768px' },
-				'mb': { 'max': '375px' },
+				'mb': { 'max': '425px' },
 			},
 			fontFamily: {
 				raleway: ['var(--font-raleway)'],
@@ -24,6 +24,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				'hero-pattern': "url('/images/header-background.jpg')",
+				'lol': "url('/images/lol.svg')",
 				'gradient-conic':
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
