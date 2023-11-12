@@ -45,7 +45,7 @@ const Header = () => {
 					<div class={`flex justify-between items-center w-full lp:absolute lp:flex-col lp:items-start lp:top-0 lp:w-full lp:h-[100vh] lp:justify-stretch lp:bg-black lp:mt-[113px] lp:pt-[60px] lp:pl-[32px] lp:pb-[153px] lp:overflow-scroll tb:pl-[20px] transition-all duration-300 ${isOpen ? 'lp:left-0' : 'lp:left-[-100%]'}`}>
 						<div className='invisible lp:visible lp:absolute lp:left-0 lp:top-0 lp:bg-lol lp:bg-center lp:bg-no-repeat lp:bg-cover lp:w-full lp:h-[768px]'></div>
 						<Nav className='flex justify-center gap-[32px] lp:flex-col lp:justify-stretch lp:gap-[48px] tb:gap-[28px]' />
-						<div>
+						<div className='h-[100%]'>
 							<LanguageSwitcher />
 						</div>
 					</div>
