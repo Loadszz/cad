@@ -13,14 +13,32 @@ const Hero = () => {
 	const { t, locale, locales, handleClick } = useLanguageSwitch();
 
 	return (
-		<Swiper
-			modules={[Navigation, Pagination]}
-			slidesPerView={1}
-			pagination
-			scrollbar={{ draggable: true }}
-			onSlideChange={() => console.log('slide change')}
-			onSwiper={(swiper) => console.log(swiper)}>
-			{/* <SwiperSlide>
+		<>
+			<section className='bg-hero-pattern bg-center bg-cover bg-no-repeat py-[116px]'>
+				<div className="wrapper">
+					<div className='py-[116px]'>
+						<div className='hero-sub-title mb-[15px]'>{t('hero.sub-title')}</div>
+						<h1 className='max-w-[1134px] lp:max-w-[784px] mb-[60px] lp:mb-[32px] tb:mb-[24px]'>{t('hero.h1')}</h1>
+						<div className='hero-text max-w-[665px] mb-[64px] lp:mb-[48px] tb:mb-[40px]'>{t('hero.text')}</div>
+						<div className='flex justify-center items-center h-[54px] w-[250px] rounded-[360px] bg-accent'>
+							<Button className={'raleway-bold text-[16px] text-white leading-[24px] mr-[10px]'} text={t('hero.buttonText')} />
+							<Image
+								src={'./images/heroButtonArrow.svg'}
+								alt={'heroButtonArrow.svg'}
+								width={20}
+								height={20} />
+						</div>
+					</div>
+				</div>
+			</section>
+			<Swiper
+				modules={[Navigation, Pagination]}
+				slidesPerView={1}
+				pagination
+				scrollbar={{ draggable: true }}
+				onSlideChange={() => console.log('slide change')}
+				onSwiper={(swiper) => console.log(swiper)}>
+				{/* <SwiperSlide>
 				<section className='bg-hero-pattern bg-center bg-cover bg-no-repeat py-[116px]'>
 					<div className="wrapper">
 						<div className='py-[116px]'>
@@ -39,7 +57,7 @@ const Hero = () => {
 					</div>
 				</section>
 			</SwiperSlide> */}
-			<SwiperSlide>
+				{/* <SwiperSlide>
 				<section className='bg-hero-pattern bg-center bg-cover bg-no-repeat py-[116px]'>
 					<div className="wrapper">
 						<div className='py-[116px]'>
@@ -57,9 +75,10 @@ const Hero = () => {
 						</div>
 					</div>
 				</section>
-			</SwiperSlide>
-			<SwiperButtons />
-		</Swiper >
+			</SwiperSlide> */}
+				<SwiperButtons />
+			</Swiper >
+		</>
 	)
 }
 
