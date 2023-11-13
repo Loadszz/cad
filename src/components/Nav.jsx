@@ -4,7 +4,7 @@ import { useLanguageSwitch } from '@/assets/useLanguageSwitch'
 const Nav = ({ className }) => {
 	const { t, locale, locales, handleClick } = useLanguageSwitch();
 	return (
-		<nav className='w-full lp:mb-[60px]'>
+		<nav className='w-full lp:mb-[220px] tb:mb-[320px]'>
 			<ul className={className}>
 				<li className='nav-link'>
 					<Link href='#'>{t('header.navigation-1')}</Link></li>
