@@ -23,8 +23,8 @@ module.exports = {
 				unbounded: ['var(--font-unbounded)'],
 			},
 			backgroundImage: {
-				'hero-pattern': "url('/images/header-background.jpg')",
-				'lol': "url('/images/lol.svg')",
+				'hero-bg': "url('/images/hero/hero-background.jpg')",
+				'burger-bg': "url('/images/header/header-burger-background.svg')",
 				'gradient-conic':
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
