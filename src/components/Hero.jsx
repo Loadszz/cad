@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import SwiperButtons from './ui/SwiperButtons';
+import { Trans } from 'next-i18next';
 
 
 const Hero = () => {
@@ -17,25 +18,27 @@ const Hero = () => {
 			id: 1,
 			image: 'bg-hero-bg',
 			subTitle: `${t('hero.sub-title')}`,
-			title: `${t('hero.h1')}`,
+			titleEng: <>Custom <span className='text-[#44CAFF]'>IT solutions</span> for your business</>,
+			titleUa: <>Кастомні <span className='text-[#44CAFF]'>IT-рішення</span> для вашого бізнесу</>,
 			text: `${t('hero.text')}`
 		},
 		{
 			id: 2,
 			image: 'bg-hero-bg',
 			subTitle: `${t('hero.sub-title')}`,
-			title: `${t('hero.h1')}`,
+			titleEng: <>Custom <span className='text-[#44CAFF]'>IT solutions</span> for your business</>,
+			titleUa: <>Кастомні <span className='text-[#44CAFF]'>IT-рішення</span> для вашого бізнесу</>,
 			text: `${t('hero.text')}`
 		},
 		{
 			id: 3,
 			image: 'bg-hero-bg',
 			subTitle: `${t('hero.sub-title')}`,
-			title: `${t('hero.h1')}`,
+			titleEng: <>Custom <span className='text-[#44CAFF]'>IT solutions</span> for your business</>,
+			titleUa: <>Кастомні <span className='text-[#44CAFF]'>IT-рішення</span> для вашого бізнесу</>,
 			text: `${t('hero.text')}`
 		},
 	]
-
 	return (
 		<>
 			<Swiper
@@ -51,7 +54,7 @@ const Hero = () => {
 							<div className="wrapper">
 								<div>
 									<div className='hero-sub-title mb-[15px]'>{slide.subTitle}</div>
-									<h1 className='max-w-[934px] lp:max-w-[784px] mb-[60px] lp:mb-[32px] tb:mb-[24px]'>{slide.title}</h1>
+									<h1 className='max-w-[934px] lp:max-w-[784px] mb-[60px] lp:mb-[32px] tb:mb-[24px]'>{locale == 'en' ? slide.titleEng : slide.titleUa}</h1>
 									<div className='hero-text max-w-[665px] mb-[64px] lp:mb-[48px] tb:mb-[40px]'>{slide.text}</div>
 									<div className='flex justify-center items-center h-[54px] w-[250px] rounded-[360px] bg-accent'>
 										<Button className={'raleway-medium text-[16px] text-white leading-[24px] mr-[10px]'} text={t('hero.button-text')} />

@@ -1,6 +1,5 @@
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
-// import i18n from '@/assets/i18n';
 
 export function useLanguageSwitch() {
 	const { t } = useTranslation();

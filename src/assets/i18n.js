@@ -22,9 +22,11 @@ i18n
 			},
 		},
 		lng: 'en', // Язык по умолчанию
-		fallbackLng: 'en', // Язык для запаса
+		fallbackLng: false, // Язык для запаса
 		keySeparator: false, // Опционально
 		interpolation: {
 			escapeValue: false,
 		},
 	});
+
+export default i18n.t.bind(i18n)
