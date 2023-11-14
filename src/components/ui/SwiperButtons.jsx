@@ -34,7 +34,7 @@ const SwiperButtons = ({ slides }) => {
 			<button
 				className={`relative icon-hero-arrow-right text-[18px] p-[10px] text-white bg-[#50453E] border border-[#8C8B8B] rounded-[360px] ${disabledArrowRigth}`}
 				onClick={() => { swiper.slideNext(); addDisabled(swiper); }}>
-				<CircularProgressbar strokeWidth={3} value={percentage} className='absolute top-0 left-0' />
+				<CircularProgressbar strokeWidth={3} value={percentage} className='absolute top-[50%] translate-y-[-50%]   left-0' />
 			</button>
 		</div>
 	)
