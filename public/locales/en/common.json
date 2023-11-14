@@ -10,7 +10,7 @@
 		"sub-title": "From web development to cloud technologies.",
 		"h1": "Custom IT solutions for your business",
 		"text": "We combine innovation and technology to create unique products that meet your business needs.",
-		"buttonText": "Let's Talk"
+		"button-text": "Let's Talk"
 	},
 	"services": {
 		"h2": "Our Services",
@@ -26,5 +26,23 @@
 		"text-fifth": "We integrate AI-based solutions for analytics, automation and personalization.",
 		"title-sixth": "Custom Solutions",
 		"text-sixth": "We develop unique IT solutions in accordance with the needs of your business."
+	},
+	"advantages": {
+		"h2": "Advantages of working with us",
+		"sub-title": "We maximize the speed and efficiency of development using DevOps practices and process automation. We transfer your infrastructure from on-prem to cloud solutions, ensuring flexibility and scalability.",
+		"item-title-first": "We approve Road Mar and budget",
+		"item-text-first": "For each project we assign a personal Team Lead",
+		"item-title-second": "We approve a team lead for your project",
+		"item-text-second": "For each project we assign a personal Team Lead",
+		"item-title-third": "Connecting you to our Slack",
+		"item-text-third": "For quick communication, you can also choose Telegram",
+		"item-title-fourth": "We manage all tasks in FreshDesk",
+		"item-text-fourth": "Where you will have access and where all the history will be stored when working with tasks",
+		"item-title-fifth": "Start all scheduled tasks",
+		"item-text-fifth": "We will create all the planned tasks ourselves and send them to you for approval",
+		"item-title-sixth": "Control",
+		"item-text-sixth": "When each task is completed, we unsubscribe to Slack / Telegram",
+		"item-title-seven": "Monthly Strategy Sessions",
+		"item-text-seven": "Every month we audit your infrastructure and proactively offer solutions to modernize it"
 	}
 }

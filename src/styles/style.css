@@ -28,15 +28,32 @@
 	@apply unbounded-regular text-[24px] lp:text-[16px] text-white leading-[33px] lp:leading-[22px] tb:text-[14px] tb:leading-[19px]
 }
 .services-card-icon {
-	@apply text-[32px] text-cyan-400 group-hover:text-white w-[64px] h-[64px] lp:w-[64px] lp:h-[64px] rounded-[480px] bg-[#F4FBFF] group-hover:bg-[#6AD5FF]
+	@apply text-[32px] text-cyan-400 lg:group-hover:text-white w-[64px] h-[64px] lp:w-[64px] lp:h-[64px] rounded-[480px] bg-[#F4FBFF] lg:group-hover:bg-[#6AD5FF]
 }
 .services-card-title {
-	@apply unbounded-regular text-[22px] leading-[32px] group-hover:text-white
+	@apply unbounded-regular text-[22px] leading-[32px] lg:group-hover:text-white
 }
 .services-card-text {
-	@apply raleway-medium text-[18px] leading-[25px] tb:text-[16px] tb:leading-[22px]  group-hover:text-white
+	@apply raleway-medium text-[18px] leading-[25px] tb:text-[16px] tb:leading-[22px]  lg:group-hover:text-white
 }
-
+.advantage-header-text {
+	@apply raleway-medium text-[18px] lp:text-[14px] leading-[23px] lp:leading-[18px]
+}
+.advantage-circle-icon {
+	@apply bg-[#bdcacf] rounded-[350px] p-[24px] lp:p-[20px] tb:p-[16px]
+}
+.advantage-circle-number {
+	@apply unbounded-semibold text-cyan-400 text-[44px] lp:text-[36px] tb:text-[24px] leading-[44px] lp:leading-[36px] tb:leading-[24px]
+}
+.advantage-item-icon {
+	@apply text-[64px] lp:text-[43px] tb:text-[26px] text-cyan-400 h-[130px] lp:h-[100px] tb:h-[60px] border rounded-[345px] bg-white
+}
+.advantage-item-title {
+	@apply unbounded-semibold text-[32px] lp:text-[24px] tb:text-[16px] leading-[45px] lp:leading-[33px] tb:leading-[22px]
+}
+.advantage-item-text {
+	@apply raleway-regular text-[20px] lp:text-[16px] tb:text-[14px] leading-[28px] lp:leading-[22px] tb:leading-[19px]
+}
 
 
 

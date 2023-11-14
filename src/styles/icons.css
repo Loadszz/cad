@@ -23,7 +23,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-advantage-circle:before {
+	content: "\e926";
+	color: #bdcacf;
+ }
 .icon-fb:before {
   content: "\e900";
   color: #fff;

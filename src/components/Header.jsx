@@ -23,7 +23,7 @@ const Header = () => {
 								src={'./images/header/logo.svg'}
 								alt='logo'
 								width={163}
-								height={58}
+								height={59}
 								className='mb-[6px] lp:w-[122px] tb:w-[98px]'
 							/>
 							<Image
@@ -43,7 +43,7 @@ const Header = () => {
 						<span className={`absolute top-1/2 transform -translate-y-1/2 w-[20px] h-[3px] bg-white rounded-[32px] translate-x-[-50%] left-[50%] ${isOpen ? 'hidden' : ''}`}></span>
 						<span className={`absolute bottom-[12px] w-[20px] h-[3px] bg-white rounded-[32px] translate-x-[-50%] left-[50%] transition-all duration-300 ${isOpen ? 'rotate-[-45deg] top-[50%]' : ''}`}></span>
 					</button>
-					<div class={`flex justify-between items-center w-full lp:fixed lp:justify-start lp:flex-col lp:items-start lp:top-0 lp:w-full lp:h-[100%] lp:bg-black lp:mt-[96px] tb:mt-[84px] lp:pt-[60px] lp:pl-[32px] tb:pl-[20px] lp:pb-[136px] tb:pb-[124px] lp:overflow-scroll transition-all duration-300 lp:bg-lol lp:bg-center lp:bg-no-repeat lp:bg-cover ${isOpen ? 'lp:left-0' : 'lp:left-[-100%]'}`}>
+					<div class={`flex justify-between items-center w-full lp:fixed lp:justify-start lp:flex-col lp:items-start lp:top-0 lp:w-full lp:h-[100%] lp:bg-black lp:mt-[96px] tb:mt-[84px] lp:pt-[60px] lp:pl-[32px] tb:pl-[20px] lp:pb-[136px] tb:pb-[124px] lp:overflow-scroll transition-all duration-300 lp:bg-burger-bg lp:bg-center lp:bg-no-repeat lp:bg-cover ${isOpen ? 'lp:left-0' : 'lp:left-[-100%]'}`}>
 						<Nav className='flex justify-center gap-[32px] lp:flex-col lp:justify-stretch lp:gap-[48px] tb:gap-[28px]' />
 						<div>
 							<LanguageSwitcher />

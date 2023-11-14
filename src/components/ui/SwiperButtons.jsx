@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { useSwiper } from 'swiper/react';
 
-const SwiperButtons = () => {
+const SwiperButtons = ({ slides }) => {
 	const swiper = useSwiper();
 	let [disabledArrowLeft, setDisabledArrowLeft] = useState('disabled')
 	let [disabledArrowRigth, setDisabledArrowRight] = useState('')
@@ -20,16 +20,16 @@ const SwiperButtons = () => {
 		}
 	}
 	// console.log(swiper.pagination.el.childElementCount);
-	console.log(swiper);
+	console.log(slides.length);
 	return (
-		<div className="absolute bottom-[10%] left-[50%] translate-x-[-50%] max-w-[1680px] w-full z-10">
+		<div className='flex items-center justify-start gap-[24px] wrapper relative bottom-[130px] z-10'>
 			<button
-				className={`font-raleway text-[50px] w-[100px] h-[100px] text-white ${disabledArrowLeft}`}
-				onClick={() => { swiper.slidePrev(); addDisabled(swiper); }}>←</button>
+				className={`icon-hero-arrow-left text-[18px] p-[10px] text-white bg-[#50453E] border border-[#8C8B8B] rounded-[360px] transition-all duration-300 hover:border-r-white ${disabledArrowLeft}`}
+				onClick={() => { swiper.slidePrev(); addDisabled(swiper); }}></button>
+			<div className='font-unbounded font-normal leading-[24px] text-white'>{swiper.activeIndex + 1}/{slides.length}</div>
 			<button
-				className={`font-raleway text-[50px] w-[100px] h-[100px] text-white  ${disabledArrowRigth}`}
-				onClick={() => { swiper.slideNext(); addDisabled(swiper); }}>→</button>
-			<div className='font-raleway text-[32px] text-white'>{swiper.activeIndex + 1}/2</div>
+				className={`icon-hero-arrow-right text-[18px] p-[10px] text-white bg-[#50453E] border border-[#8C8B8B] border-r-white rounded-[360px] ${disabledArrowRigth}`}
+				onClick={() => { swiper.slideNext(); addDisabled(swiper); }}></button>
 		</div>
 	)
 }
