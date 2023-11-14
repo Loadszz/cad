@@ -29,7 +29,7 @@ const Services = () => {
 						</p>
 					</div>
 					{/* card */}
-					<div className='flex-[0_1_33.333%] lp:flex-[0_1_50%] tb:flex-[0_1_100%] group lg:hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[50px] lp:py-[40px] lp:pl-[40px] lp:pr-[32px] tb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] lp:flex-[0_1_50%] tb:flex-[0_1_100%] group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[50px] lp:py-[40px] lp:pl-[40px] lp:pr-[32px] tb:p-[20px]'>
 						<div className='services-card-icon icon-services-gear flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-second')}
@@ -39,7 +39,7 @@ const Services = () => {
 						</p>
 					</div>
 					{/* card */}
-					<div className='flex-[0_1_33.333%] lp:flex-[0_1_50%] tb:flex-[0_1_100%] group lg:hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[50px] lp:py-[40px] lp:pl-[32px] lp:pr-[40px] tb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] lp:flex-[0_1_50%] tb:flex-[0_1_100%] group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[50px] lp:py-[40px] lp:pl-[32px] lp:pr-[40px] tb:p-[20px]'>
 						<div className='services-card-icon icon-services-telephone flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-third')}
@@ -49,7 +49,7 @@ const Services = () => {
 						</p>
 					</div>
 					{/* card */}
-					<div className='flex-[0_1_33.333%] lp:flex-[0_1_50%] tb:flex-[0_1_100%] group lg:hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[120px] lp:py-[40px] lp:pl-[40px] lp:pr-[32px] tb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] lp:flex-[0_1_50%] tb:flex-[0_1_100%] group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[120px] lp:py-[40px] lp:pl-[40px] lp:pr-[32px] tb:p-[20px]'>
 						<div className='services-card-icon icon-services-globe flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-fourth')}
@@ -59,7 +59,7 @@ const Services = () => {
 						</p>
 					</div>
 					{/* card */}
-					<div className='flex-[0_1_33.333%] lp:flex-[0_1_50%] tb:flex-[0_1_100%] group lg:hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2]  translate-all duration-300 h-full px-[40px] pt-[40px] pb-[120px] lp:py-[40px] lp:pl-[32px] lp:pr-[40px] tb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] lp:flex-[0_1_50%] tb:flex-[0_1_100%] group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2]  translate-all duration-300 h-full px-[40px] pt-[40px] pb-[120px] lp:py-[40px] lp:pl-[32px] lp:pr-[40px] tb:p-[20px]'>
 						<div className='services-card-icon icon-services-puzzle flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-fifth')}
@@ -69,7 +69,7 @@ const Services = () => {
 						</p>
 					</div>
 					{/* card */}
-					<div className='flex-[0_1_33.333%] lp:flex-[0_1_50%] tb:flex-[0_1_100%] group lg:hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[120px] lp:py-[40px] lp:pl-[40px] lp:pr-[32px] tb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] lp:flex-[0_1_50%] tb:flex-[0_1_100%] group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[120px] lp:py-[40px] lp:pl-[40px] lp:pr-[32px] tb:p-[20px]'>
 						<div className='services-card-icon icon-services-puzzle flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-sixth')}
