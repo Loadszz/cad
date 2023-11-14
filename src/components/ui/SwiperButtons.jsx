@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import { useSwiper } from 'swiper/react';
 import { CircularProgressbar } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
 
 const SwiperButtons = ({ slides }) => {
 	const swiper = useSwiper();

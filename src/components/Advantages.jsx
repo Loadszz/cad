@@ -53,7 +53,6 @@ const Advantages = () => {
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>

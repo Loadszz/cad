@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+.CircularProgressbar-path {
+	stroke: #fff;
+ }
+ .CircularProgressbar-trail {
+	stroke: #8C8B8B;
+ }
+ .CircularProgressbar-text {
+	fill: yellow;
+ }
+ .CircularProgressbar-background {
+	fill: green;
+ }
+
 @layer base {
 	.raleway-medium {
 		@apply font-raleway font-medium
