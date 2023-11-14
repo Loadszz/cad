@@ -62,7 +62,7 @@
 	@apply unbounded-regular text-[24px] lp:text-[16px] text-white leading-[33px] lp:leading-[22px] tb:text-[14px] tb:leading-[19px]
 }
 .services-card-icon {
-	@apply text-[32px] text-cyan-400 group-hover:text-white w-[64px] h-[64px] lp:w-[64px] lp:h-[64px] rounded-[480px] bg-[#F4FBFF] lg:group-hover:bg-[#6AD5FF]
+	@apply text-[32px] text-cyan-400 group-hover:text-white w-[64px] h-[64px] lp:w-[64px] lp:h-[64px] rounded-[480px] bg-[#F4FBFF] group-hover:bg-[#6AD5FF]
 }
 .services-card-title {
 	@apply unbounded-regular text-[22px] leading-[32px] group-hover:text-white
