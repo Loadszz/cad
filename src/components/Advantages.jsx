@@ -18,10 +18,10 @@ const Advantages = () => {
 					<div className='absolute top-[10px] left-[50%] tb:left-[31px] tb:translate-x-[-31px] translate-x-[-50%] w-[20px] tb:w-[10px] h-[2231px] bg-white rounded-[360px]'></div>
 					<div>
 						{/* item-right */}
-						<div className='w-full flex flex-col items-end mb-[120px] tb:mb-[40px]'>
-							<div className='flex items-center w-[50%] tb:w-full mb-[32px]'>
+						<div className='w-full flex flex-col items-end mb-[120px] tb:mb-[40px] group'>
+							<div className='flex items-center w-[50%] tb:w-full mb-[32px] group'>
 								{/* circle */}
-								<div className="advantage-circle-icon relative left-[-25px] lp:left-[-20px] tb:left-[-11px] z-10">
+								<div className="advantage-circle-icon relative left-[-25px] lp:left-[-20px] tb:left-[-11px] z-10 group-hover:bg-cyan-400 transition-all duration-300">
 									<div className='absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] rounded-[350px] h-[20px] tb:h-[15px] w-[20px] tb:w-[15px] bg-white'></div>
 								</div>
 								<div className='border border-dashed border-[#919191] w-[100%]'></div>
@@ -53,6 +53,7 @@ const Advantages = () => {
 								</div>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>

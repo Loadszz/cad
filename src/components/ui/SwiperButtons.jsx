@@ -1,6 +1,8 @@
 'use client'
 import React, { useState } from 'react'
 import { useSwiper } from 'swiper/react';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 
 const SwiperButtons = ({ slides }) => {
 	const swiper = useSwiper();
@@ -19,17 +21,22 @@ const SwiperButtons = ({ slides }) => {
 			setDisabledArrowRight('')
 		}
 	}
+	const currentSlide = swiper.activeIndex + 1
+	const percentage = Math.round((currentSlide / slides.length) * 100);
+
 	// console.log(swiper.pagination.el.childElementCount);
-	console.log(slides.length);
+	console.log(percentage);
 	return (
 		<div className='flex items-center justify-start gap-[24px] wrapper relative bottom-[130px] z-10'>
 			<button
-				className={`icon-hero-arrow-left text-[18px] p-[10px] text-white bg-[#50453E] border border-[#8C8B8B] rounded-[360px] transition-all duration-300 hover:border-r-white ${disabledArrowLeft}`}
+				className={`icon-hero-arrow-left text-[18px] p-[10px] text-white bg-[#50453E] border-[2px] border-[#8C8B8B] rounded-[360px] transition-all duration-300 ${disabledArrowLeft}`}
 				onClick={() => { swiper.slidePrev(); addDisabled(swiper); }}></button>
-			<div className='font-unbounded font-normal leading-[24px] text-white'>{swiper.activeIndex + 1}/{slides.length}</div>
+			<div className='font-unbounded font-normal leading-[24px] text-white'>{currentSlide}/{slides.length}</div>
 			<button
-				className={`icon-hero-arrow-right text-[18px] p-[10px] text-white bg-[#50453E] border border-[#8C8B8B] border-r-white rounded-[360px] ${disabledArrowRigth}`}
-				onClick={() => { swiper.slideNext(); addDisabled(swiper); }}></button>
+				className={`relative icon-hero-arrow-right text-[18px] p-[10px] text-white bg-[#50453E] border border-[#8C8B8B] rounded-[360px] ${disabledArrowRigth}`}
+				onClick={() => { swiper.slideNext(); addDisabled(swiper); }}>
+				<CircularProgressbar strokeWidth={3} value={percentage} className='absolute top-0 left-0' />
+			</button>
 		</div>
 	)
 }

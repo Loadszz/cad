@@ -3,11 +3,32 @@
 @tailwind utilities;
 
 @layer base {
+	.raleway-medium {
+		@apply font-raleway font-medium
+  }
+  .raleway-regular {
+	  @apply font-raleway font-normal
+  }
+  .raleway-semibold {
+	  @apply font-raleway font-semibold
+  }
+  .raleway-bold {
+	  @apply font-raleway font-bold 
+  }
+  .unbounded-regular {
+	  @apply font-unbounded font-normal
+  }
+  .unbounded-semibold {
+	  @apply font-unbounded font-semibold 
+  }
+  .unbounded-medium {
+	  @apply font-unbounded font-medium
+  }
 	.lock {
 		@apply overflow-hidden
 	}
 	h1 {
-		@apply unbounded-medium text-[72px] lp:text-[48px] tb:text-[36px] leading-[93px] lp:leading-[62px] tb:leading-[43px]  text-white
+		@apply unbounded-regular text-[72px] lp:text-[48px] tb:text-[36px] leading-[93px] lp:leading-[62px] tb:leading-[43px]  text-white
 	}
 	h2 {
 		@apply unbounded-medium text-[48px] leading-[62px] lp:text-[32px] lp:leading-[41px] tb:text-[28px] tb:leading-[36px]
@@ -19,7 +40,7 @@
 
 @layer components {
 .nav-link {
-	@apply raleway-semibold text-[14px] lp:text-[24px] tb:text-[16px] text-white leading-[24px]
+	@apply raleway-medium text-[14px] lp:text-[24px] tb:text-[16px] text-white leading-[24px]
 }
 .hero-sub-title {
 	@apply unbounded-regular text-[20px] lp:text-[14px] text-white
@@ -55,27 +76,4 @@
 	@apply raleway-regular text-[20px] lp:text-[16px] tb:text-[14px] leading-[28px] lp:leading-[22px] tb:leading-[19px]
 }
 
-
-
-.raleway-medium {
-	 @apply font-raleway font-medium
-}
-.raleway-regular {
-	@apply font-raleway font-normal
-}
-.raleway-semibold {
-	@apply font-raleway font-semibold
-}
-.raleway-bold {
-	@apply font-raleway font-bold 
-}
-.unbounded-regular {
-	@apply font-unbounded font-normal
-}
-.unbounded-semibold {
-	@apply font-unbounded font-semibold 
-}
-.unbounded-medium {
-	@apply font-unbounded font-medium
-}
 }
