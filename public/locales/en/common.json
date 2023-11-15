@@ -44,5 +44,14 @@
 		"item-text-sixth": "When each task is completed, we unsubscribe to Slack / Telegram",
 		"item-title-seven": "Monthly Strategy Sessions",
 		"item-text-seven": "Every month we audit your infrastructure and proactively offer solutions to modernize it"
+	},
+	"our-results": {
+		"h2": "Our results",
+		"item-text-first": "Of active marketplace users",
+		"item-text-second": "In funding secured owning to our designs",
+		"item-text-third": "Increase in sign-up conversion rate",
+		"item-text-fourth": "Increase in customer base",
+		"item-text-fifth": "Monthly E-commerce visits",
+		"item-text-sixth": "Monthly E-commerce visits"
 	}
 }

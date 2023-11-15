@@ -74,10 +74,10 @@
 	@apply unbounded-regular text-[22px] leading-[32px] group-hover:text-white
 }
 .services-card-text {
-	@apply raleway-medium text-[18px] leading-[25px] tb:text-[16px] tb:leading-[22px]  group-hover:text-white
+	@apply raleway-regular text-[18px] leading-[25px] tb:text-[16px] tb:leading-[22px]  group-hover:text-white
 }
 .advantage-header-text {
-	@apply raleway-medium text-[18px] lp:text-[14px] leading-[23px] lp:leading-[18px]
+	@apply raleway-regular text-[18px] lp:text-[14px] leading-[23px] lp:leading-[18px]
 }
 .advantage-circle-icon {
 	@apply bg-[#bdcacf] rounded-[350px] p-[20px] lp:p-[16px]
@@ -89,7 +89,7 @@
 	@apply text-[43px] lp:text-[36px] tb:text-[22px] text-cyan-400 border rounded-[345px] bg-white
 }
 .advantage-item-title {
-	@apply unbounded-semibold text-[24px] lp:text-[20px] tb:text-[16px] leading-[33px] lp:leading-[38px] tb:leading-[22px]
+	@apply unbounded-semibold text-[24px] lp:text-[20px] tb:text-[16px] leading-[33px] lp:leading-[28px] tb:leading-[22px]
 }
 .advantage-item-text {
 	@apply raleway-regular text-[18px] lp:text-[16px] tb:text-[14px] leading-[22px] tb:leading-[19px]
