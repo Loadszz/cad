@@ -52,12 +52,12 @@
 }
 
 @layer components {
-	.text-hover {
+.text-hover {
 	@apply transition-all duration-300 hover:text-cyan-400
-	}
-	.btn-hover {
-		@apply transition-all duration-300 hover:text-black hover:bg-white
-	}
+}
+.btn-hover {
+	@apply transition-all duration-300 hover:text-black hover:bg-white
+}
 .nav-link {
 	@apply raleway-semibold text-[14px] lp:text-[24px] tb:text-[16px] text-white leading-[24px] text-hover cursor-pointer
 }
@@ -80,19 +80,19 @@
 	@apply raleway-medium text-[18px] lp:text-[14px] leading-[23px] lp:leading-[18px]
 }
 .advantage-circle-icon {
-	@apply bg-[#bdcacf] rounded-[350px] p-[24px] lp:p-[20px] tb:p-[16px]
+	@apply bg-[#bdcacf] rounded-[350px] p-[20px] lp:p-[16px]
 }
 .advantage-circle-number {
-	@apply unbounded-semibold text-cyan-400 text-[44px] lp:text-[36px] tb:text-[24px] leading-[44px] lp:leading-[36px] tb:leading-[24px]
+	@apply unbounded-semibold text-cyan-400 text-[24px] leading-[24px] lp:leading-[36px]
 }
 .advantage-item-icon {
-	@apply text-[64px] lp:text-[43px] tb:text-[26px] text-cyan-400 h-[130px] lp:h-[100px] tb:h-[60px] border rounded-[345px] bg-white
+	@apply text-[43px] lp:text-[36px] tb:text-[22px] text-cyan-400 border rounded-[345px] bg-white
 }
 .advantage-item-title {
-	@apply unbounded-semibold text-[32px] lp:text-[24px] tb:text-[16px] leading-[45px] lp:leading-[33px] tb:leading-[22px]
+	@apply unbounded-semibold text-[24px] lp:text-[20px] tb:text-[16px] leading-[33px] lp:leading-[38px] tb:leading-[22px]
 }
 .advantage-item-text {
-	@apply raleway-regular text-[20px] lp:text-[16px] tb:text-[14px] leading-[28px] lp:leading-[22px] tb:leading-[19px]
+	@apply raleway-regular text-[18px] lp:text-[16px] tb:text-[14px] leading-[22px] tb:leading-[19px]
 }
 .our-client-card-number {
 	@apply unbounded-medium text-[64px] lp:text-[32px] leading-[70px] lp:leading-[41px] bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] bg-clip-text text-transparent

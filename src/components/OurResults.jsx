@@ -9,7 +9,7 @@ const OurResults = () => {
 	})
 	console.log(inView);
 	return (
-		<section name='our-results' ref={ref} className='bg-our-client-bg bg-center bg-cover bg-no-repeat py-[120px] lp:py-[60px] tb:py-[50px]'>
+		<section ref={ref} name='our-results' className='bg-our-client-bg bg-center bg-cover bg-no-repeat py-[120px] lp:py-[60px] tb:py-[50px]'>
 			<div className='wrapper'>
 				<h2 className='text-white mb-[60px] lp:mb-[40px]'>Наши результати</h2>
 				<div className='flex justify-between flex-wrap tb:flex-col gap-y-[150px] lp:gap-y-[60px] tb:gap-y-[32px]'>

@@ -13,6 +13,7 @@ const Header = () => {
 			document.body.classList.remove('lock');
 		}
 	}
+	// console.log(document);
 	return (
 		<header className="absolute w-full py-[18px] z-10">
 			<div className="wrapper">
@@ -44,7 +45,7 @@ const Header = () => {
 						<span className={`absolute bottom-[12px] w-[20px] h-[3px] bg-white rounded-[32px] translate-x-[-50%] left-[50%] transition-all duration-300 ${isOpen ? 'rotate-[-45deg] top-[50%]' : ''}`}></span>
 					</button>
 					<div className={`flex justify-between items-center w-full lp:fixed lp:justify-start lp:flex-col lp:items-start lp:top-0 lp:w-full lp:h-[100%] lp:bg-black lp:pt-[156px] tb:pt-[144px] lp:pl-[32px] tb:pl-[20px] lp:pb-[136px] tb:pb-[124px] lp:overflow-scroll transition-all duration-300 lp:bg-burger-bg lp:bg-center lp:bg-no-repeat lp:bg-cover ${isOpen ? 'lp:left-0' : 'lp:left-[-100%]'}`}>
-						<Nav className='flex justify-center gap-[32px] lp:flex-col lp:justify-stretch lp:gap-[48px] tb:gap-[28px]' />
+						<Nav isOpen={isOpen} handleBurger={handleBurger} className='flex justify-center gap-[32px] lp:flex-col lp:justify-stretch lp:gap-[48px] tb:gap-[28px]' />
 						<div>
 							<LanguageSwitcher />
 						</div>
