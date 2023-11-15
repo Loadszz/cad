@@ -52,8 +52,14 @@
 }
 
 @layer components {
+	.text-hover {
+	@apply transition-all duration-300 hover:text-cyan-400
+	}
+	.btn-hover {
+		@apply transition-all duration-300 hover:text-black hover:bg-white
+	}
 .nav-link {
-	@apply raleway-medium text-[14px] lp:text-[24px] tb:text-[16px] text-white leading-[24px]
+	@apply raleway-semibold text-[14px] lp:text-[24px] tb:text-[16px] text-white leading-[24px] text-hover cursor-pointer
 }
 .hero-sub-title {
 	@apply unbounded-regular text-[20px] lp:text-[14px] text-white
@@ -88,5 +94,10 @@
 .advantage-item-text {
 	@apply raleway-regular text-[20px] lp:text-[16px] tb:text-[14px] leading-[28px] lp:leading-[22px] tb:leading-[19px]
 }
-
+.our-client-card-number {
+	@apply unbounded-medium text-[64px] lp:text-[32px] leading-[70px] lp:leading-[41px] bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] bg-clip-text text-transparent
+}
+.our-client-card-text {
+	@apply raleway-medium text-[20px] lp:text-[16px] tb:text-[18px]  leading-[24px] text-white
+}
 }

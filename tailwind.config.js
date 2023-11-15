@@ -25,6 +25,7 @@ module.exports = {
 			backgroundImage: {
 				'hero-bg': "url('/images/hero/hero-background.jpg')",
 				'burger-bg': "url('/images/header/header-burger-background.svg')",
+				'our-client-bg': "url('/images/our-client/our-client-bg.jpg')",
 				'gradient-conic':
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
