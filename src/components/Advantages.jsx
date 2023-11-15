@@ -15,7 +15,7 @@ const Advantages = () => {
 				</div>
 				{/* main */}
 				<div className='relative'>
-					<div className='absolute top-[10px] left-[50%] tb:left-[31px] tb:translate-x-[-31px] translate-x-[-50%] w-[20px] tb:w-[10px] h-[2231px] bg-white rounded-[360px]'></div>
+					<div className='absolute top-[10px] left-[50%] tb:left-[31px] tb:translate-x-[-31px] translate-x-[-50%] w-[20px] tb:w-[10px] h-full bg-white rounded-[360px]'></div>
 					<div>
 						{/* item-right */}
 						<div className='w-full flex flex-col items-end tb:mb-[40px]'>
