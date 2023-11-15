@@ -6,11 +6,11 @@ import { useLanguageSwitch } from '@/assets/useLanguageSwitch';
 
 
 const OurResults = () => {
-	const [ref, inView] = useInView({
+	const [ref, inView, entry] = useInView({
 		threshold: 0.5,
 	})
 	const { t } = useLanguageSwitch()
-	console.log(inView);
+
 	return (
 		<section ref={ref} name='our-results' className='bg-our-client-bg bg-center bg-cover bg-no-repeat py-[120px] lp:py-[60px] tb:py-[50px]'>
 			<div className='wrapper'>
@@ -19,7 +19,7 @@ const OurResults = () => {
 					<div className='flex-[0_0_27.4%] border-t border-gray-400'>
 						<div className='our-client-card-number mb-[20px] lp:mb-[10px] pt-[40px]'>
 							{inView ?
-								<CountUp start={1} end={1000000} duration={5} separator=" " /> :
+								<CountUp start={1} end={1000} duration={5} separator=" " /> :
 								0}+
 						</div>
 						<p className='our-client-card-text'>{t('our-results.item-text-first')}</p>
