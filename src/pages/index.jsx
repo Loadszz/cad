@@ -1,7 +1,4 @@
 import Link from "next/link";
-// import { useEffect } from "react";
-// import { useTranslation } from "next-i18next"
-// import { useRouter } from 'next/router';
 import { useLanguageSwitch } from '@/assets/useLanguageSwitch'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Header from '@/components/Header'
@@ -10,6 +7,7 @@ import { raleway, unbounded } from '@/assets/fonts/font'
 import Services from "@/components/Services";
 import Advantages from "@/components/Advantages";
 import OurResults from "@/components/OurResults";
+import Portfolio from "@/components/Portfolio";
 
 
 export default function Home() {
@@ -23,6 +21,7 @@ export default function Home() {
 				<Services />
 				<Advantages />
 				<OurResults />
+				<Portfolio />
 			</main>
 		</wrapper>
 	)

@@ -5,7 +5,7 @@ import { useLanguageSwitch } from '@/assets/useLanguageSwitch'
 const Nav = ({ className, isOpen, handleBurger }) => {
 	const { t, locale, locales, handleClick } = useLanguageSwitch();
 	return (
-		<nav className='w-full lp:mb-[50px]'>
+		<nav className='w-full tb:mb-[50px]'>
 			<ul className={className}>
 				<li className='nav-link'>
 					<Link
@@ -29,7 +29,7 @@ const Nav = ({ className, isOpen, handleBurger }) => {
 				</li>
 				<li className='nav-link'>
 					<Link
-						// to='our-results'
+						to='portfolio'
 						activeClass='active'
 						smooth={true}
 						spy={true}

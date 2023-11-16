@@ -41,13 +41,16 @@
 		@apply overflow-hidden
 	}
 	h1 {
-		@apply unbounded-regular text-[72px] lp:text-[48px] tb:text-[36px] leading-[93px] lp:leading-[62px] tb:leading-[43px]  text-white
+		@apply unbounded-regular text-[72px] tb:text-[48px] mb:text-[36px] leading-[93px] tb:leading-[62px] mb:leading-[43px]  text-white
 	}
 	h2 {
-		@apply unbounded-medium text-[48px] leading-[62px] lp:text-[32px] lp:leading-[41px] tb:text-[28px] tb:leading-[36px]
+		@apply unbounded-medium text-[48px] leading-[62px] tb:text-[32px] tb:leading-[41px] mb:text-[28px] mb:leading-[36px]
+	}
+	h3	{
+		@apply unbounded-medium text-[32px] tb:text-[26px] mb:text-[22px] leading-[41px] tb:leading-[34px] mb:leading-[29px]
 	}
 	.wrapper {
-		@apply max-w-[1710px] mx-auto px-[15px] lp:px-[32px] tb:px-[20px]
+		@apply max-w-[1710px] mx-auto px-[15px] tb:px-[32px] mb:px-[20px]
 	}
 }
 
@@ -59,45 +62,61 @@
 	@apply transition-all duration-300 hover:text-black hover:bg-white
 }
 .nav-link {
-	@apply raleway-semibold text-[14px] lp:text-[24px] tb:text-[16px] text-white leading-[24px] text-hover cursor-pointer
+	@apply raleway-semibold text-[14px] tb:text-[24px] mb:text-[16px] text-white leading-[24px] text-hover cursor-pointer
 }
 .hero-sub-title {
-	@apply unbounded-regular text-[20px] lp:text-[14px] text-white
+	@apply unbounded-regular text-[20px] tb:text-[14px] text-white
 }
 .hero-text {
-	@apply unbounded-regular text-[24px] lp:text-[16px] text-white leading-[33px] lp:leading-[22px] tb:text-[14px] tb:leading-[19px]
+	@apply unbounded-regular text-[24px] tb:text-[16px] text-white leading-[33px] tb:leading-[22px] mb:text-[14px] mb:leading-[19px]
 }
 .services-card-icon {
-	@apply text-[32px] text-cyan-400 group-hover:text-white w-[64px] h-[64px] lp:w-[64px] lp:h-[64px] rounded-[480px] bg-[#F4FBFF] group-hover:bg-[#6AD5FF]
+	@apply text-[32px] text-cyan-400 group-hover:text-white w-[64px] h-[64px] tb:w-[64px] tb:h-[64px] rounded-[480px] bg-[#F4FBFF] group-hover:bg-[#6AD5FF]
 }
 .services-card-title {
 	@apply unbounded-regular text-[22px] leading-[32px] group-hover:text-white
 }
 .services-card-text {
-	@apply raleway-regular text-[18px] leading-[25px] tb:text-[16px] tb:leading-[22px]  group-hover:text-white
+	@apply raleway-regular text-[18px] leading-[25px] mb:text-[16px] mb:leading-[22px]  group-hover:text-white
 }
 .advantage-header-text {
-	@apply raleway-regular text-[18px] lp:text-[14px] leading-[23px] lp:leading-[18px]
+	@apply raleway-regular text-[18px] tb:text-[14px] leading-[23px] tb:leading-[18px]
 }
 .advantage-circle-icon {
-	@apply bg-[#bdcacf] rounded-[350px] p-[20px] lp:p-[16px]
+	@apply bg-[#bdcacf] rounded-[350px] p-[20px] tb:p-[16px]
 }
 .advantage-circle-number {
-	@apply unbounded-semibold text-cyan-400 text-[24px] leading-[24px] lp:leading-[36px]
+	@apply unbounded-semibold text-cyan-400 text-[24px] leading-[24px] tb:leading-[36px]
 }
 .advantage-item-icon {
-	@apply text-[43px] lp:text-[36px] tb:text-[22px] text-cyan-400 border rounded-[345px] bg-white
+	@apply text-[43px] tb:text-[36px] mb:text-[22px] text-cyan-400 border rounded-[345px] bg-white
 }
 .advantage-item-title {
-	@apply unbounded-semibold text-[24px] lp:text-[20px] tb:text-[16px] leading-[33px] lp:leading-[28px] tb:leading-[22px]
+	@apply unbounded-semibold text-[24px] tb:text-[20px] mb:text-[16px] leading-[33px] tb:leading-[28px] mb:leading-[22px]
 }
 .advantage-item-text {
-	@apply raleway-regular text-[18px] lp:text-[16px] tb:text-[14px] leading-[22px] tb:leading-[19px]
+	@apply raleway-regular text-[18px] tb:text-[16px] mb:text-[14px] leading-[22px] mb:leading-[19px]
 }
 .our-client-card-number {
-	@apply unbounded-medium text-[64px] lp:text-[32px] leading-[70px] lp:leading-[41px] bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] bg-clip-text text-transparent
+	@apply unbounded-medium text-[64px] tb:text-[32px] leading-[70px] tb:leading-[41px] bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] bg-clip-text text-transparent
 }
 .our-client-card-text {
-	@apply raleway-medium text-[20px] lp:text-[16px] tb:text-[18px]  leading-[24px] text-white
+	@apply raleway-medium text-[20px] tb:text-[16px] mb:text-[18px]  leading-[24px] text-white
 }
+
+
+/* //////////////////////////////////////////////////////////// */
+.pf-card-heading-number {
+ @apply unbounded-semibold text-[18px] tb:text-[16px] leading-[26px] bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] bg-clip-text text-transparent
+}
+.pf-card-heading-text {
+	@apply raleway-regular text-[20px] tb:text-[18px] mb:text-[16px] leading-[24px] mb:leading-[21px] text-[#B8BBBC]
+}
+.pf-card-tags {
+	@apply raleway-semibold text-[16px] tb:text-[14px] mb:text-[12px] leading-[24px]
+}
+.pf-card-text {
+	@apply raleway-regular text-[16px] tb:text-[14px] leading-[24px] tb:leading-[19px]
+}
+
 }

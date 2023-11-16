@@ -14,9 +14,9 @@ module.exports = {
 		extend: {
 			screens: {
 				'pc': { 'max': '1710px' },
-				'lp': { 'max': '1024px' },
-				'tb': { 'max': '768px' },
-				'mb': { 'max': '425px' },
+				'tb': { 'max': '1024px' },
+				'mb': { 'max': '768px' },
+				'mm': { 'max': '425px' },
 			},
 			fontFamily: {
 				raleway: ['var(--font-raleway)'],
@@ -32,6 +32,7 @@ module.exports = {
 			colors: {
 				white: '#FFFFFF',
 				black: '#12191C',
+				// gray: '#B8BBBC',
 				accent: '#37C0F6',
 				myBrown: 'rgba(255, 255, 255, 0.20)'
 			},
