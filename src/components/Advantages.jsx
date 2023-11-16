@@ -6,7 +6,7 @@ const Advantages = () => {
 	const { t, locale, locales, handleClick } = useLanguageSwitch()
 	return (
 		<section name='advantages' className='bg-[#F5F5F5] py-[120px] tb:py-[60px] p:py-[50px]'>
-			<div className='wrapper'>
+			<div className='wrapper lg:max-w-[1200px]'>
 				{/* header */}
 				<div className='mb-[50px] tb:mb-[60px]'>
 					<h2 className='w-[478px] tb:w-[415px] mb:w-full mb-[40px] tb:mb-[20px]'>{t('advantages.h2')}</h2>
