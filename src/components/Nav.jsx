@@ -2,12 +2,12 @@ import { Link } from 'react-scroll';
 import { useLanguageSwitch } from '@/assets/useLanguageSwitch'
 
 
-const Nav = ({ className, isOpen, handleBurger }) => {
+const Nav = ({ navStyle, ulStyle, liStyle, isOpen, handleBurger }) => {
 	const { t, locale, locales, handleClick } = useLanguageSwitch();
 	return (
-		<nav className='w-full tb:mb-[50px]'>
-			<ul className={className}>
-				<li className='nav-link'>
+		<nav className={navStyle}>
+			<ul className={ulStyle}>
+				<li className={liStyle}>
 					<Link
 						to='services'
 						activeClass='active'
@@ -17,17 +17,16 @@ const Nav = ({ className, isOpen, handleBurger }) => {
 					>{t('header.navigation-1')}
 					</Link>
 				</li>
-				<li className='nav-link'>
+				<li className={liStyle}>
 					<Link
 						to='advantages'
 						activeClass='active'
 						smooth={true}
 						spy={true}
 						onClick={isOpen ? handleBurger : null}>{t('header.navigation-2')}
-
 					</Link>
 				</li>
-				<li className='nav-link'>
+				<li className={liStyle}>
 					<Link
 						to='portfolio'
 						activeClass='active'
@@ -37,9 +36,9 @@ const Nav = ({ className, isOpen, handleBurger }) => {
 
 					</Link>
 				</li>
-				<li className='nav-link'>
+				<li className={liStyle}>
 					<Link
-						// to='our-results'
+						to='reviews'
 						activeClass='active'
 						smooth={true}
 						spy={true}
@@ -47,14 +46,13 @@ const Nav = ({ className, isOpen, handleBurger }) => {
 
 					</Link>
 				</li>
-				<li className='nav-link'>
+				<li className={liStyle}>
 					<Link
-						// to='our-results'
+						to='contact'
 						activeClass='active'
 						smooth={true}
 						spy={true}
 						onClick={isOpen ? handleBurger : null}>{t('header.navigation-5')}
-
 					</Link>
 				</li>
 			</ul>

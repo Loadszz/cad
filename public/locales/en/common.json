@@ -45,6 +45,15 @@
 		"item-title-seven": "Monthly Strategy Sessions",
 		"item-text-seven": "Every month we audit your infrastructure and proactively offer solutions to modernize it"
 	},
+	"portfolio": {
+		"h2": "/images/portfolio/portfolio-card-1.jpg",
+		"item-text-first": "Активних користувачів ринку",
+		"item-text-second": "У фінансуванні забезпечене володіння нашими розробками",
+		"item-text-third": "Збільшення коефіцієнта конверсії під час реєстрації",
+		"item-text-fourth": "Збільшення клієнтської бази",
+		"item-text-fifth": "Щомісячні відвідування електронної комерції",
+		"item-text-sixth": "Щомісячні відвідування електронної комерції"
+	},
 	"our-results": {
 		"h2": "Our results",
 		"item-text-first": "Of active marketplace users",

@@ -13,7 +13,7 @@ const Header = () => {
 			document.body.classList.remove('lock');
 		}
 	}
-	// console.log(document);
+
 	return (
 		<header className="absolute w-full py-[18px] z-10">
 			<div className="wrapper">
@@ -21,14 +21,14 @@ const Header = () => {
 					<div className='flex flex-col items-center'>
 						<a href='/' className='z-10'>
 							<Image
-								src={'./images/header/logo.svg'}
+								src={'./images/logo.svg'}
 								alt='logo'
 								width={163}
 								height={59}
 								className='mb-[6px] tb:w-[122px] mb:w-[98px]'
 							/>
 							<Image
-								src={'./images/header/consulting-and-audit.svg'}
+								src={'./images/consulting-and-audit.svg'}
 								alt='sub-logo'
 								width={162}
 								height={12}
@@ -45,7 +45,12 @@ const Header = () => {
 						<span className={`absolute bottom-[12px] w-[20px] h-[3px] bg-white rounded-[32px] translate-x-[-50%] left-[50%] transition-all duration-300 ${isOpen ? 'rotate-[-45deg] top-[50%]' : ''}`}></span>
 					</button>
 					<div className={`flex justify-between items-center w-full tb:fixed tb:justify-start tb:flex-col tb:items-start tb:top-0 tb:w-full tb:h-[100%] tb:bg-black tb:pt-[156px] mb:pt-[144px] tb:pl-[32px] mb:pl-[20px] tb:pb-[136px] mb:pb-[124px] tb:overflow-scroll transition-all duration-300 tb:bg-burger-bg tb:bg-center tb:bg-no-repeat tb:bg-cover ${isOpen ? 'tb:left-0' : 'tb:left-[-100%]'}`}>
-						<Nav isOpen={isOpen} handleBurger={handleBurger} className='flex justify-center gap-[32px] tb:flex-col tb:justify-stretch tb:gap-[48px] mb:gap-[28px]' />
+						<Nav
+							isOpen={isOpen}
+							handleBurger={handleBurger}
+							navStyle={'w-full tb:mb-[50px]'}
+							ulStyle={'flex justify-center gap-[32px] tb:flex-col tb:justify-stretch tb:gap-[48px] mb:gap-[28px]'}
+							liStyle={'header-nav-link'} />
 						<div>
 							<LanguageSwitcher />
 						</div>

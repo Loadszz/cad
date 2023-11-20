@@ -14,6 +14,7 @@ module.exports = {
 		extend: {
 			screens: {
 				'pc': { 'max': '1710px' },
+				'lpl': { 'max': '1440px' },
 				'tb': { 'max': '1024px' },
 				'mb': { 'max': '768px' },
 				'mm': { 'max': '425px' },
@@ -25,16 +26,19 @@ module.exports = {
 			backgroundImage: {
 				'hero-bg': "url('/images/hero/hero-background.jpg')",
 				'burger-bg': "url('/images/header/header-burger-background.svg')",
+				'footer': "url('/images/footer/footer-background.svg')",
 				'our-client-bg': "url('/images/our-client/our-client-bg.jpg')",
+				'contact': "url('/images/contact/contact-background.jpg')",
 				'gradient-conic':
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			colors: {
 				white: '#FFFFFF',
 				black: '#12191C',
-				// gray: '#B8BBBC',
+				bdGray: '#E6E6E6',
 				accent: '#37C0F6',
-				myBrown: 'rgba(255, 255, 255, 0.20)'
+				myBrown: 'rgba(255, 255, 255, 0.20)',
+				footerRgb: 'rgba(255, 255, 255, 0.12)'
 			},
 		},
 	},

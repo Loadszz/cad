@@ -2,9 +2,11 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { fadeIn } from '@/assets/variants'
+import { useLanguageSwitch } from '@/assets/useLanguageSwitch'
+
 
 const Portfolio = () => {
-
+	const { t, locale, locales, handleClick } = useLanguageSwitch()
 	return (
 		<section name='portfolio' className='pt-[100px] tb:pt-[60px] mb:pt-[50px]'>
 			<div className='wrapper'>
@@ -14,7 +16,7 @@ const Portfolio = () => {
 				<div className='flex flex-wrap mb:flex-col relative'>
 					{/* line */}
 					<div className='absolute left-[50%] translate-x-[-50%] h-full w-[1px] bg-[#E6E6E6] mb:hidden'></div>
-					<div className='flex justify-between mb:flex-col gap-x-[180px] tb:gap-x-[64px] mb:gap-0 border-t'>
+					<div className='flex justify-between mb:flex-col gap-x-[180px] tb:gap-x-[64px] mb:gap-0 border-t last-of-type:mb-[30px] tb:last-of-type:mb-0'>
 						{/* card */}
 						<motion.div
 							variants={fadeIn('right', 0.3)}
@@ -43,7 +45,8 @@ const Portfolio = () => {
 							{/* card-image */}
 							<div className='overflow-hidden relative h-[358px] tb:h-[250px] mb:h-[300px] mm:h-[250px]   border border-[#E6E6E6] rounded-[12px]'>
 								<Image
-									src={'/images/portfolio/portfolio-card-1.jpg'}
+									// src={'/images/portfolio/portfolio-card-1.jpg'}
+									src={t('portfolio.h2')}
 									alt='portfolio-card.jpg'
 									width={750}
 									height={358}
@@ -87,7 +90,7 @@ const Portfolio = () => {
 							</div>
 						</motion.div>
 					</div>
-					<div className='flex justify-between mb:flex-col gap-x-[180px] tb:gap-x-[64px] mb:gap-0 border-t'>
+					<div className='flex justify-between mb:flex-col gap-x-[180px] tb:gap-x-[64px] mb:gap-0 border-t last-of-type:mb-[30px] tb:last-of-type:mb-0'>
 						{/* card */}
 						<motion.div
 							variants={fadeIn('right', 0.3)}

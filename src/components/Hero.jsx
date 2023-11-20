@@ -1,16 +1,12 @@
-'use client'
 import { useLanguageSwitch } from '@/assets/useLanguageSwitch'
-import React from 'react'
+import React, { useState } from 'react'
 import Button from './ui/Button';
 import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
 import SwiperButtons from './ui/SwiperButtons';
-import { Trans } from 'next-i18next';
+import ButtonLeft from './ui/swiper-navigation/ButtonLeft';
+import ButtonRight from './ui/swiper-navigation/ButtonRight';
 
-
-const Hero = () => {
+const Hero = ({ Swiper, SwiperSlide, Navigation, Pagination }) => {
 	const { t, locale, locales, handleClick } = useLanguageSwitch();
 
 	const slides = [
@@ -39,12 +35,17 @@ const Hero = () => {
 			text: `${t('hero.text')}`
 		},
 	]
+
 	return (
 		<>
 			<Swiper
+				className={'hero-swiper-pagination'}
 				modules={[Navigation, Pagination]}
 				slidesPerView={1}
-				pagination
+				pagination={{
+					type: 'fraction',
+					el: '.hero-swiper-pagination',
+				}}
 				scrollbar={{ draggable: true }}
 				onSlideChange={() => console.log('slide change')}
 				onSwiper={(swiper) => console.log(swiper)}>
@@ -69,7 +70,8 @@ const Hero = () => {
 						</section>
 					</SwiperSlide>
 				))}
-				<SwiperButtons slides={slides} />
+				<SwiperButtons slides={slides}>
+				</SwiperButtons>
 			</Swiper >
 			{/* <Swiper
 				modules={[Navigation, Pagination]}
