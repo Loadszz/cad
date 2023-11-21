@@ -35,7 +35,7 @@ const Contact = () => {
 								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
 							<textarea className='h-[54px] outline-none border-b-[1px] border-[#E6E6E6] placeholder:text-[#B8BBBC] placeholder:text-[16px] text-[20px] resize-none' placeholder='Ваше Сообщение' type="text" required />
 							<ReCAPTCHA
-								sitekey={siteKey}
+								sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
 								onChange={handleRecaptcha} />
 							<button className={`raleway-semibold text-[16px] leading-[24px] text-[#141415] py-[15px] px-[30px] bg-[#F3F4F6] rounded-[360px] mt-[40px] transition-all duration-300 ${isVerified ? 'bg-cyan-400' : ''}`} type='submit' disabled={!isVerified}>Отправить</button>
 						</form>
