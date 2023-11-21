@@ -22,7 +22,7 @@ const Portfolio = () => {
 							variants={fadeIn('right', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='flex-[0_1_44.7%] mb:flex-[0_0_auto] py-[90px] tb:py-[64px] mb:py-[32px]'>
 							{/* card-heading */}
 							<div className='mb-[28px]'>
@@ -33,7 +33,7 @@ const Portfolio = () => {
 								{/* card-title */}
 								<h3 className='mb-[18px]'>Первый кейс</h3>
 								{/* card-tags */}
-								<div className='flex flex-wrap gap-y-[20px] mb:gap-y-[10px]'>
+								<div className='flex flex-wrap gap-[20px] mb:gap-[10px]'>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Решения на базе ИИ</div>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Консалтинг</div>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Оптимизация</div>
@@ -43,14 +43,14 @@ const Portfolio = () => {
 							<div className='pf-card-text mb-[28px]'>Максимизируем скорость и эффективность разработки с помощью DevOps-практик и автоматизации процессов. Переносим вашу инфраструктуру из on-prem в облачные решения, обеспечивая гибкость и масштабируемость.
 							</div>
 							{/* card-image */}
-							<div className='overflow-hidden relative h-[358px] tb:h-[250px] mb:h-[300px] mm:h-[250px]   border border-[#E6E6E6] rounded-[12px]'>
+							<div className='overflow-hidden relative h-[358px] tb:h-[250px] mb:h-[300px] mm:h-[250px] border border-[#E6E6E6] rounded-[12px]'>
 								<Image
 									// src={'/images/portfolio/portfolio-card-1.jpg'}
 									src={t('portfolio.h2')}
 									alt='portfolio-card.jpg'
 									width={750}
 									height={358}
-									className='absolute h-[358px] tb:h-[250px] mb:h-[300px] mm:h-[250px] object-cover transition-all duration-300 hover:scale-125'
+									className='absolute h-[358px] w-[750px] tb:h-[250px] mb:h-[300px] mm:h-[250px] object-cover transition-all duration-300 tb:hover:scale-125'
 								/>
 							</div>
 						</motion.div>
@@ -58,7 +58,7 @@ const Portfolio = () => {
 							variants={fadeIn('left', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='flex-[0_1_44.7%] mb:flex-[0_0_auto] py-[90px] tb:py-[64px] mb:py-[32px]'>
 							{/* card-heading */}
 							<div className='mb-[28px]'>
@@ -69,7 +69,7 @@ const Portfolio = () => {
 								{/* card-title */}
 								<h3 className='mb-[18px]'>Первый кейс</h3>
 								{/* card-tags */}
-								<div className='flex flex-wrap gap-y-[20px] mb:gap-y-[10px]'>
+								<div className='flex flex-wrap gap-[20px] mb:gap-[10px]'>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Решения на базе ИИ</div>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Консалтинг</div>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Оптимизация</div>
@@ -85,7 +85,7 @@ const Portfolio = () => {
 									alt='portfolio-card.jpg'
 									width={750}
 									height={358}
-									className='absolute h-[358px] tb:h-[250px] mb:h-[300px] mm:h-[250px] object-cover transition-all duration-300 hover:scale-125'
+									className='absolute h-[358px] tb:h-[250px] mb:h-[300px] mm:h-[250px] object-cover transition-all duration-300 tb:hover:scale-125'
 								/>
 							</div>
 						</motion.div>
@@ -96,7 +96,7 @@ const Portfolio = () => {
 							variants={fadeIn('right', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='flex-[0_1_44.7%] mb:flex-[0_0_auto] py-[90px] tb:py-[64px] mb:py-[32px]'>
 							{/* card-heading */}
 							<div className='mb-[28px]'>
@@ -107,7 +107,7 @@ const Portfolio = () => {
 								{/* card-title */}
 								<h3 className='mb-[18px]'>Первый кейс</h3>
 								{/* card-tags */}
-								<div className='flex flex-wrap gap-y-[20px] mb:gap-y-[10px]'>
+								<div className='flex flex-wrap gap-[20px] mb:gap-[10px]'>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Решения на базе ИИ</div>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Консалтинг</div>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Оптимизация</div>
@@ -123,7 +123,7 @@ const Portfolio = () => {
 									alt='portfolio-card.jpg'
 									width={750}
 									height={358}
-									className='absolute h-[358px] tb:h-[250px] mb:h-[300px] mm:h-[250px] object-cover transition-all duration-300 hover:scale-125'
+									className='absolute h-[358px] tb:h-[250px] mb:h-[300px] mm:h-[250px] object-cover transition-all duration-300 tb:hover:scale-125'
 								/>
 							</div>
 						</motion.div>
@@ -131,7 +131,7 @@ const Portfolio = () => {
 							variants={fadeIn('left', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='flex-[0_1_44.7%] mb:flex-[0_0_auto] py-[90px] tb:py-[64px] mb:py-[32px]'>
 							{/* card-heading */}
 							<div className='mb-[28px]'>
@@ -142,7 +142,7 @@ const Portfolio = () => {
 								{/* card-title */}
 								<h3 className='mb-[18px]'>Первый кейс</h3>
 								{/* card-tags */}
-								<div className='flex flex-wrap gap-y-[20px] mb:gap-y-[10px]'>
+								<div className='flex flex-wrap gap-[20px] mb:gap-[10px]'>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Решения на базе ИИ</div>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Консалтинг</div>
 									<div className='pf-card-tags py-[7px] px-[20px] border border-[#E6E6E6] rounded-[360px]'>Оптимизация</div>
@@ -158,7 +158,7 @@ const Portfolio = () => {
 									alt='portfolio-card.jpg'
 									width={750}
 									height={358}
-									className='absolute h-[358px] tb:h-[250px] mb:h-[300px] mm:h-[250px] object-cover transition-all duration-300 hover:scale-125'
+									className='absolute h-[358px] tb:h-[250px] mb:h-[300px] mm:h-[250px] object-cover transition-all duration-300 tb:hover:scale-125'
 								/>
 							</div>
 						</motion.div>

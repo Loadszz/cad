@@ -8,7 +8,7 @@ const Footer = () => {
 			<div className='wrapper tb:px-[32px]'>
 				{/* footer-top */}
 				<div className='flex mb:flex-col justify-between items-center mb:items-baseline mb-[60px] mb:gap-y-[50px]'>
-					<a href="">
+					<a href="/">
 						<Image
 							src={'/images/logo.svg'}
 							alt='logo.svg'
@@ -30,16 +30,16 @@ const Footer = () => {
 							<Nav
 								// navStyle={}
 								ulStyle={'flex flex-col gap-y-[12px] max-w-[266px]'}
-								liStyle={'unbounded-regular text-[14px] leading-[24px] text-[#BCBCBC]'} />
+								liStyle={'unbounded-regular text-[14px] leading-[24px] text-[#BCBCBC] cursor-pointer'} />
 						</div>
 						{/* footer-social */}
 						<div>
 							<div className='unbounded-medium text-[14px] leading-[24px] text-white mb-[40px] tb:mb-[20px]'>Соцсети</div>
 							<div className='flex flex-wrap gap-x-[16px] gap-y-[16px] tb:max-w-[112px] mb:max-w-full'>
-								<div className='icon-linkedin text-[20px] p-[14px] bg-footerRgb rounded-[48px]'></div>
-								<div className='icon-instagram text-[20px] p-[14px] bg-footerRgb rounded-[48px]'></div>
-								<div className='icon-you-tube text-[20px] p-[14px] bg-footerRgb rounded-[48px]'></div>
-								<div className='icon-fb text-[20px] p-[14px] bg-footerRgb rounded-[48px]'></div>
+								{/* <a href='' className='icon-linkedin text-[20px] p-[14px] bg-footerRgb rounded-[48px] cursor-pointer'></a> */}
+								<a href='' className='icon-instagram text-[20px] p-[14px] bg-footerRgb rounded-[48px] cursor-pointer'></a>
+								{/* <a href='' className='icon-you-tube text-[20px] p-[14px] bg-footerRgb rounded-[48px] cursor-pointer'></a> */}
+								<a href='' className='icon-fb text-[20px] p-[14px] bg-footerRgb rounded-[48px] cursor-pointer'></a>
 							</div>
 						</div>
 					</div>

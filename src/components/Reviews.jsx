@@ -97,7 +97,7 @@ const Reviews = ({ Swiper, SwiperSlide, Navigation, Pagination, Autoplay }) => {
 					<Swiper
 						modules={[Navigation, Pagination, Autoplay]}
 						slidesPerView={1}
-						autoplay={{ delay: 2000 }}
+						autoplay={{ delay: 5000 }}
 						breakpoints={breakpoints}
 						pagination={{
 							type: 'progressbar',

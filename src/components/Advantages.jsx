@@ -23,7 +23,7 @@ const Advantages = () => {
 							variants={fadeIn('left', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='w-full flex flex-col items-end mb:mb-[40px]'>
 							<div className='w-[50%] mb:w-full group'>
 								<div className='flex items-center mb-[32px] tb:mb-[20px]'>
@@ -48,7 +48,7 @@ const Advantages = () => {
 							variants={fadeIn('right', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='w-full flex flex-col items-start mb:mb-[40px]'>
 							<div className='w-[50%] mb:w-full group'>
 								<div className='flex items-center mb:flex-row-reverse mb-[32px] tb:mb-[20px]'>
@@ -73,7 +73,7 @@ const Advantages = () => {
 							variants={fadeIn('left', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='w-full flex flex-col items-end mb:mb-[40px]'>
 							<div className='w-[50%] mb:w-full group'>
 								<div className='flex items-center mb-[32px] tb:mb-[20px]'>
@@ -100,7 +100,7 @@ const Advantages = () => {
 							variants={fadeIn('right', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='w-full flex flex-col items-start mb:mb-[40px]'>
 							<div className='w-[50%] mb:w-full group'>
 								<div className='flex items-center mb:flex-row-reverse mb-[32px] tb:mb-[20px] '>
@@ -127,7 +127,7 @@ const Advantages = () => {
 							variants={fadeIn('left', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='w-full flex flex-col items-end mb:mb-[40px]'>
 							<div className='w-[50%] mb:w-full group'>
 								<div className='flex items-center mb-[32px] tb:mb-[20px]'>
@@ -152,7 +152,7 @@ const Advantages = () => {
 							variants={fadeIn('right', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='w-full flex flex-col items-start mb:mb-[40px]'>
 							<div className='w-[50%] mb:w-full group'>
 								<div className='flex items-center mb:flex-row-reverse mb-[32px] tb:mb-[20px]'>
@@ -177,7 +177,7 @@ const Advantages = () => {
 							variants={fadeIn('left', 0.3)}
 							initial='hidden'
 							whileInView={'show'}
-							viewport={{ once: false, amount: 0.3 }}
+							viewport={{ once: true, amount: 0.3 }}
 							className='w-full flex flex-col items-end mb:mb-[40px]'>
 							<div className='w-[50%] mb:w-full group'>
 								<div className='flex items-center mb-[32px] tb:mb-[20px]'>

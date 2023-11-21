@@ -23,6 +23,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-instagram:before {
+	content: "\ea92";
+	color: #fff;
+ }
 .icon-reviews-arrow-left:before {
 	content: "\e929";
  }
@@ -46,10 +50,6 @@
 }
 .icon-hero-arrow-right:before {
   content: "\e902";
-  color: #fff;
-}
-.icon-instagram:before {
-  content: "\e903";
   color: #fff;
 }
 .icon-linkedin:before {

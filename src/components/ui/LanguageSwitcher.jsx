@@ -8,6 +8,7 @@ const LanguageSwitcher = () => {
 		switch (lang) {
 			case 'en':
 				return 'Eng';
+			// Разблокировать для ру языка
 			// case 'ru':
 			// 	return 'Рус';
 			case 'ua':

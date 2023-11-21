@@ -1,10 +1,5 @@
 import { useLanguageSwitch } from '@/assets/useLanguageSwitch'
-import Image from 'next/image';
 import React from 'react'
-import { BsCloudCheckFill, BsFillTelephoneFill } from 'react-icons/bs'
-import { FaGear, FaGlobe } from 'react-icons/fa6'
-import { IoExtensionPuzzleSharp } from 'react-icons/io5'
-
 
 
 const Services = () => {
@@ -19,7 +14,7 @@ const Services = () => {
 					<div className='absolute h-full w-[1px] left-[66.7%] top-0 bg-[#E6E6E6] tb:hidden'></div>
 					{/* line */}
 					{/* card */}
-					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[50px] tb:py-[40px] tb:pl-[32px] tb:pr-[40px] mb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 px-[40px] pt-[40px] pb-[50px] tb:py-[40px] tb:pl-[32px] tb:pr-[40px] mb:p-[20px]'>
 						<div className='services-card-icon icon-services-cloud-check flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-first')}
@@ -29,7 +24,7 @@ const Services = () => {
 						</p>
 					</div>
 					{/* card */}
-					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[50px] tb:py-[40px] tb:pl-[40px] tb:pr-[32px] mb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 px-[40px] pt-[40px] pb-[50px] tb:py-[40px] tb:pl-[40px] tb:pr-[32px] mb:p-[20px]'>
 						<div className='services-card-icon icon-services-gear flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-second')}
@@ -39,7 +34,7 @@ const Services = () => {
 						</p>
 					</div>
 					{/* card */}
-					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[50px] tb:py-[40px] tb:pl-[32px] tb:pr-[40px] mb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 px-[40px] pt-[40px] pb-[50px] tb:py-[40px] tb:pl-[32px] tb:pr-[40px] mb:p-[20px]'>
 						<div className='services-card-icon icon-services-telephone flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-third')}
@@ -49,7 +44,7 @@ const Services = () => {
 						</p>
 					</div>
 					{/* card */}
-					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[120px] tb:py-[40px] tb:pl-[40px] tb:pr-[32px] mb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 px-[40px] pt-[40px] pb-[120px] tb:py-[40px] tb:pl-[40px] tb:pr-[32px] mb:p-[20px]'>
 						<div className='services-card-icon icon-services-globe flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-fourth')}
@@ -59,7 +54,7 @@ const Services = () => {
 						</p>
 					</div>
 					{/* card */}
-					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2]  translate-all duration-300 h-full px-[40px] pt-[40px] pb-[120px] tb:py-[40px] tb:pl-[32px] tb:pr-[40px] mb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2]  translate-all duration-300 px-[40px] pt-[40px] pb-[120px] tb:py-[40px] tb:pl-[32px] tb:pr-[40px] mb:p-[20px]'>
 						<div className='services-card-icon icon-services-puzzle flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-fifth')}
@@ -69,7 +64,7 @@ const Services = () => {
 						</p>
 					</div>
 					{/* card */}
-					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 h-full px-[40px] pt-[40px] pb-[120px] tb:py-[40px] tb:pl-[40px] tb:pr-[32px] mb:p-[20px]'>
+					<div className='flex-[0_1_33.333%] tb:flex-[0_1_50%] mb:flex-[0_1_100%] h-auto group hover:bg-gradient-to-r from-[#44CAFF] to-[#10D7F2] translate-all duration-300 px-[40px] pt-[40px] pb-[120px] tb:py-[40px] tb:pl-[40px] tb:pr-[32px] mb:p-[20px]'>
 						<div className='services-card-icon icon-services-puzzle flex justify-center items-center mb-[29px]'></div>
 						<div className='services-card-title mb-[20px]'>
 							{t('services.title-sixth')}

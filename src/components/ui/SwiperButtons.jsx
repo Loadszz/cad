@@ -1,24 +1,47 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useSwiper } from 'swiper/react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 
 const SwiperButtons = ({ slides }) => {
+	// const totalSlides = Object.keys(sliderObject).length;
 	const swiper = useSwiper();
 	const [progress, setProgress] = useState(33);
 
-	const handleSlidePrev = () => {
-		swiper.slidePrev();
-		const currentSlide = swiper.activeIndex + 1;
-		const percentage = Math.round((currentSlide / slides.length) * 100);
-		setProgress(percentage);
-	};
-	const handleSlideNext = () => {
-		swiper.slideNext();
+	const updateProgress = () => {
 		const currentSlide = swiper.activeIndex + 1;
 		const percentage = Math.round((currentSlide / slides.length) * 100);
 		setProgress(percentage);
 	};
 
+	const handleSlidePrev = () => {
+		swiper.slidePrev();
+		updateProgress();
+	};
+
+	const handleSlideNext = () => {
+		swiper.slideNext();
+		updateProgress();
+	};
+
+	useEffect(() => {
+		swiper.on('slideChange', updateProgress);
+
+		return () => {
+			swiper.off('slideChange', updateProgress);
+		};
+	}, [swiper]);
+
+	useEffect(() => {
+		const handleAutoPlay = () => {
+			updateProgress();
+		};
+
+		swiper.on('autoplay', handleAutoPlay);
+
+		return () => {
+			swiper.off('autoplay', handleAutoPlay);
+		};
+	}, [swiper]);
 	return (
 		<div className='flex items-center justify-start gap-[24px] wrapper relative bottom-[130px] z-10'>
 			<button
