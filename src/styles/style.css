@@ -14,10 +14,6 @@
  .CircularProgressbar-background {
 	fill: green;
  }
- /* .lol	.swiper-wrapper  {
-	display: flex;
-	flex-direction: column-reverse;
- } */
 
 @layer base {
   .raleway-medium {

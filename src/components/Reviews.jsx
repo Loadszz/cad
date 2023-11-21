@@ -101,9 +101,7 @@ const Reviews = ({ Swiper, SwiperSlide, Navigation, Pagination, Autoplay }) => {
 						breakpoints={breakpoints}
 						pagination={{
 							type: 'progressbar',
-						}}
-						onSlideChange={(swiper) => { console.log(swiper) }}
-						onSwiper={(swiper) => console.log(swiper)}>
+						}}>
 						<div className='flex justify-between items-center mb-[60px] tb:mb-[40px] mb:mb-[32px]'>
 							<h2 className='mr-[50px]'>Отзывы клиентов</h2>
 							<ReviewsSwapperButtons />

@@ -25,7 +25,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				'hero-bg': "url('/images/hero/hero-background.jpg')",
-				'burger-bg': "url('/images/header/header-burger-background.svg')",
+				'burger': "url('/images/header/burger-background.svg')",
 				'footer': "url('/images/footer/footer-background.svg')",
 				'our-client-bg': "url('/images/our-client/our-client-bg.jpg')",
 				'contact': "url('/images/contact/contact-background.jpg')",

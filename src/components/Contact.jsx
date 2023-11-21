@@ -1,7 +1,18 @@
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
+
 
 const Contact = () => {
+	const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+	const secretKey = process.env.RECAPTCHA_SECRET_KEY;
+	const [isVerified, setIsVerified] = useState(false)
+
+	const handleRecaptcha = () => {
+		console.log('Captcha value');
+		setIsVerified(true)
+	}
+
 	return (
 		<section name='contact' className='md:flex'>
 			{/* contact-column */}
@@ -23,7 +34,10 @@ const Contact = () => {
 								required
 								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
 							<textarea className='h-[54px] outline-none border-b-[1px] border-[#E6E6E6] placeholder:text-[#B8BBBC] placeholder:text-[16px] text-[20px] resize-none' placeholder='Ваше Сообщение' type="text" required />
-							<button className='raleway-semibold text-[16px] leading-[24px] text-[#141415] py-[15px] px-[30px] bg-[#F3F4F6] rounded-[360px] mt-[40px]' type='submit'>Отправить</button>
+							<ReCAPTCHA
+								sitekey={siteKey}
+								onChange={handleRecaptcha} />
+							<button className={`raleway-semibold text-[16px] leading-[24px] text-[#141415] py-[15px] px-[30px] bg-[#F3F4F6] rounded-[360px] mt-[40px] transition-all duration-300 ${isVerified ? 'bg-cyan-400' : ''}`} type='submit' disabled={!isVerified}>Отправить</button>
 						</form>
 					</div>
 				</div>

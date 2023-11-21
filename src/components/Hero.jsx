@@ -46,9 +46,9 @@ const Hero = ({ Swiper, SwiperSlide, Navigation, Pagination }) => {
 					type: 'fraction',
 					el: '.hero-swiper-pagination',
 				}}
-				scrollbar={{ draggable: true }}
-				onSlideChange={() => console.log('slide change')}
-				onSwiper={(swiper) => console.log(swiper)}>
+			// onSlideChange={() => console.log('slide change')}
+			// onSwiper={(swiper) => console.log(swiper)}
+			>
 				{slides.map((slide) => (
 					<SwiperSlide key={slide.id}>
 						<section className='bg-hero-bg bg-center bg-cover bg-no-repeat pt-[251px] pb-[196px] tb:pt-[176px] mb:pt-[164px] relative'>
