@@ -26,18 +26,16 @@ const Header = () => {
 							<Image
 								src={'/images/logo.svg'}
 								alt='logo'
-								// fill
-								// sizes="(max-width: 768px) 100vw, (max-width: 1740px) 500px, 30px"
 								width={163}
 								height={59}
-								className='mb-[6px] tb:w-[122px] tb:h-[55px] mb:w-[98px] mb:h-[33px]'
+								className='mb-[6px] tb:w-[122px] mb:w-[98px]'
 							/>
 							<Image
 								src={'/images/consulting-and-audit.svg'}
 								alt='sub-logo'
 								width={162}
 								height={12}
-								className='tb:w-[122px] tb:h-[55px] mb:w-[98px] mb:h-[33px]'
+								className='tb:w-[122px] mb:w-[98px]'
 							/>
 						</a>
 					</div>

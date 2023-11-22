@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from "next/link";
 import { useLanguageSwitch } from '@/assets/useLanguageSwitch'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Header from '@/components/Header'
@@ -18,6 +17,7 @@ import Portfolio from "@/components/Portfolio";
 import Reviews from "@/components/Reviews";
 import Footer from '@/components/Footer';
 import Contact from '@/components/Contact';
+import Head from 'next/head'
 
 
 export default function Home() {
@@ -25,9 +25,12 @@ export default function Home() {
 
 	return (
 		<wrapper className={`${raleway.variable} ${unbounded.variable} flex flex-col overflow-hidden`}>
-			{/* <Header /> */}
+			<Head>
+				<title>{t('meta-tags.title')}</title>
+				<meta name="description" content={t('meta-tags.description')} />
+			</Head>
+			<Header />
 			<main>
-				<Header />
 				<Hero Swiper={Swiper} SwiperSlide={SwiperSlide} Navigation={Navigation} Pagination={Pagination} Autoplay={Autoplay} />
 				<Services />
 				<Advantages />
@@ -35,8 +38,8 @@ export default function Home() {
 				<Portfolio />
 				<Reviews Swiper={Swiper} SwiperSlide={SwiperSlide} Navigation={Navigation} Pagination={Pagination} Autoplay={Autoplay} />
 				<Contact />
-				<Footer />
 			</main>
+			<Footer />
 		</wrapper>
 	)
 }

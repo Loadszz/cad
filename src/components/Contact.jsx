@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
 
 const Contact = () => {
-	const { locale } = useLanguageSwitch()
+	const { t, locale, locales, handleClick } = useLanguageSwitch()
 	const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 	const secretKey = process.env.RECAPTCHA_SECRET_KEY;
 	const [isVerified, setIsVerified] = useState(false)
@@ -44,7 +44,7 @@ const Contact = () => {
 							<ReCAPTCHA
 								sitekey='6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI'
 								onChange={handleRecaptcha} />
-							<button className={`raleway-semibold text-[16px] leading-[24px] text-[#141415] py-[15px] px-[30px] bg-[#F3F4F6] rounded-[360px] mt-[40px] transition-all duration-300 ${isVerified ? 'bg-[#37C0F6] text-white' : ''}`} type='submit' disabled={!isVerified}>Отправить</button>
+							<button className={`raleway-semibold text-[16px] leading-[24px] text-[#141415] py-[15px] px-[30px] bg-[#F3F4F6] rounded-[360px] mt-[40px] transition-all duration-300 ${isVerified ? 'text-white bg-cyan-400' : ''}`} type='submit' disabled={!isVerified}>Отправить</button>
 						</form>
 					</div>
 				</div>

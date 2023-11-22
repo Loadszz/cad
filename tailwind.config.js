@@ -24,13 +24,11 @@ module.exports = {
 				unbounded: ['var(--font-unbounded)'],
 			},
 			backgroundImage: {
-				'hero-bg': "url('/images/hero/hero-background.jpg')",
+				'hero': "url('/images/hero/hero-background.jpg')",
 				'burger': "url('/images/header/burger-background.svg')",
 				'footer': "url('/images/footer/footer-background.svg')",
-				'our-client-bg': "url('/images/our-client/our-client-bg.jpg')",
-				'contact': "url('/images/contact/contact-background.jpg')",
-				'gradient-conic':
-					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+				'our-client': "url('/images/our-client/our-client-bg.jpg')",
+				'contact': "url('/images/contact/contact-background.jpg')"
 			},
 			colors: {
 				white: '#FFFFFF',

@@ -18,7 +18,7 @@ const OurResults = () => {
 	const { t } = useLanguageSwitch()
 
 	return (
-		<section ref={ref} name='our-results' className='bg-our-client-bg bg-center bg-cover bg-no-repeat py-[120px] tb:py-[60px] mb:py-[50px]'>
+		<section ref={ref} name='our-results' className='bg-our-client bg-center bg-cover bg-no-repeat py-[120px] tb:py-[60px] mb:py-[50px]'>
 			<div className='wrapper'>
 				<h2 className='text-white mb-[60px] tb:mb-[40px]'>{t('our-results.h2')}</h2>
 				{/* our-results-body */}

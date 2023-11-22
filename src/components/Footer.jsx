@@ -1,8 +1,10 @@
 import React from 'react'
 import Nav from '@/components/Nav'
 import Image from 'next/image'
+import { useLanguageSwitch } from '@/assets/useLanguageSwitch'
 
 const Footer = () => {
+	const { t, locale, locales, handleClick } = useLanguageSwitch()
 	return (
 		<footer className='bg-black bg-footer bg-left bg-no-repeat bg-[length:50%] mb:bg-cover pt-[100px] tb:pt-[60px] pb-[60px] tb:pb-[40px]'>
 			<div className='wrapper tb:px-[32px]'>

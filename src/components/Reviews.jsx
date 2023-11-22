@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import ReviewsSwapperButtons from './ui/ReviewsSwapperButtons'
+import { useLanguageSwitch } from '@/assets/useLanguageSwitch'
 
 const Reviews = ({ Swiper, SwiperSlide, Navigation, Pagination, Autoplay }) => {
-
+	const { t, locale, locales, handleClick } = useLanguageSwitch()
 	const reviews = [
 		{
 			id: 1,

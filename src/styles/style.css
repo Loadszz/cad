@@ -58,20 +58,14 @@
 }
 
 @layer components {
-.hero-swiper-pagination .swiper-pagination-fraction {
-	@apply w-auto unbounded-regular text-[16px] leading-[24px] text-white
-}
-/* .text-hover {
-	@apply transition-all duration-300 hover:text-cyan-400
-} */
-.btn-hover {
-	@apply transition-all duration-300 hover:text-black hover:bg-white
-}
 /* //////////////////////////////////////////////////////////// */
 .header-nav-link {
 	@apply raleway-semibold text-[14px] tb:text-[24px] mb:text-[16px] text-white leading-[24px] relative before:absolute before:bottom-[-3px] before:left-[50px] before:w-0 before:border-[1px]  before:opacity-0 before:transition-all before:duration-300 before:hover:border-[#44CAFF]  before:hover:w-full before:hover:opacity-100 before:hover:border-[1px] before:hover:left-0 cursor-pointer
 }
 /* //////////////////////////////////////////////////////////// */
+.hero-swiper-pagination .swiper-pagination-fraction {
+	@apply w-auto unbounded-regular text-[16px] leading-[24px] text-white
+}
 .hero-sub-title {
 	@apply unbounded-regular text-[20px] tb:text-[14px] text-white
 }
